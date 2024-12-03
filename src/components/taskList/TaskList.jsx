@@ -99,17 +99,17 @@ const TaskList = () => {
       <h2>Task List</h2>
 
       {/* Filter Options */}
-      <div className="filter-options d-flex flex-md-row flex-column justify-content-center align-items-center">
-        <button className="col-md-4 col-sm-12" onClick={() => setFilter("all")}>
+      <div className="filter-options" style={{margin:"10px 0px"}}>
+        <button  onClick={() => setFilter("all")}>
           All Tasks
         </button>
-        <button className="col-md-4 col-sm-12" onClick={() => setFilter("completed")}>
+        <button  onClick={() => setFilter("completed")}>
           Completed Tasks
         </button>
-        <button className="col-md-4 col-sm-12" onClick={() => setFilter("pending")}>
+        <button  onClick={() => setFilter("pending")}>
           Pending Tasks
         </button>
-        <button className="col-md-4 col-sm-12" onClick={() => setFilter("overdue")}>
+        <button  onClick={() => setFilter("overdue")}>
           Overdue Tasks
         </button>
       </div>

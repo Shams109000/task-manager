@@ -8,6 +8,9 @@
   font-size: 3rem; /* Adjust size as needed */
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: red;
+  padding: 20px;
   animation: fadeIn 2s ease-out, bounce 1s 2s ease-out; /* Apply fade-in and bounce animation */
 }
 

@@ -5,12 +5,13 @@ import Dashboard from '../pages/dashboard/Dashboard';
 import TaskForm from '../components/taskForm/TaskForm';
 import TaskList from '../components/taskList/TaskList';
 import EditTaskDetails from '../components/taskDetails/EditTaskDetails';
+import Navbar from '../components/navbar/Navbar';
 function AppRoutes() {
   
   return (
     <div>
-   
       <BrowserRouter>
+      <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Dashboard/>}></Route>
         <Route path='/taskForm' element={<TaskForm/>}></Route>
