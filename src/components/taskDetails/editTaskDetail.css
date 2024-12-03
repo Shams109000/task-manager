@@ -1,0 +1,160 @@
+.task-details {
+  max-width: 900px; /* Increased the max-width for a larger container */
+  margin: 2rem auto;
+  padding: 3.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f0f8ff; /* Light background color for the container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+}
+
+.task-details h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.task-details form {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-details form div {
+  margin-bottom: 1rem;
+}
+
+.task-details label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #555;
+}
+
+.task-details input,
+.task-details textarea,
+.task-details select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.task-details textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.task-details button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-details button:hover {
+  background-color: #0056b3;
+}
+
+.task-details select {
+  background-color: white;
+  cursor: pointer;
+}
+
+.task-details button:active {
+  transform: scale(0.98);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none; /* Prevent interactions outside the modal */
+}
+
+/* Modal Box */
+.modal {
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  pointer-events: auto; /* Allow interactions inside the modal */
+  animation: slideIn 0.3s ease-out;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Keyframe for Slide-In Effect */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.confirm-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #0077b6;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background-color: #d62828;
+  transform: scale(1.05);
+}
+
+.cancel-btn:hover {
+  background-color: #023e8a;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .task-details {
+    margin-right: 20px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f7f7f7; /* Lighter background for smaller screens */
+  }
+}
